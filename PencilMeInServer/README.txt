@@ -51,7 +51,7 @@ production. My directions are based on XAMPP.
 2d) Click on the Start buttons next to both. The others do not need to be 
     started.
 3) Click on English, then click on phpMyAdmin.
-4) Click on Import, then click on Browse to find the pencilmein_layout.sql 
+4) Click on Import, then click on Browse to find the pencilmein_structure.sql 
    file, then click on Go at the bottom. It should import the database 
    structure into the database.
 5) Click on Import again, then click on Browse to find the

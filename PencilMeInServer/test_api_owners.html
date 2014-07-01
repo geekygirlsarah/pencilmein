@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>A title!</title>
+</head>
+<body>
+
+	<h2>owners</h2>
+
+	<div>
+		<strong>Get list of owner's appointments for a business
+			(id=1, date=today) (GET)</strong>
+	</div>
+	<div>
+		<em>URL: /pencilmein/v1/owners/:id/list/</em>
+	</div>
+	<form action="/pencilmein/v1/owners/1/list/" method="get"
+		target="result">
+		<input type="submit" />
+	</form>
+
+	<br />
+	<hr width="80%" />
+	<br />
+
+	<div>
+		<strong>Get list of owner's appointments from business (id=1,
+			custom date) (GET)</strong>
+	</div>
+	<div>
+		<em>URL: /pencilmein/v1/businesses/1/appointments/</em>
+	</div>
+	<form action="/pencilmein/v1/owners/1/list/" method="get"
+		target="result">
+		<br /> Type the date here:<br /> <input type="text" name="date"
+			size="30" value="2013-11-01" /> <input type="submit" />
+	</form>
+
+	<br />
+	<hr width="80%" />
+	<br />
+
+
+
+
+</body>
+</html>
