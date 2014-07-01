@@ -1,0 +1,2 @@
+ErrorDocument 404 /pencilmein/404.htm
+php_flag display_errors on
