@@ -1,0 +1,13 @@
+#ErrorDocument 404 404.htm
+#Options +FollowSymLinks
+
+#RewriteEngine on
+#RewriteBase /pencilmein/beta/
+
+#RewriteRule ^([0-9a-z]*)/([0-9a-z]*)/?$ /pencilmein/beta/index.php?q1=$1&q2=$2 [L,NC]
+#RewriteRule ^([0-9a-z]*)/?$ /pencilmein/beta/index.php?q1=$1 [L,NC]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\?*$ index.php?__route__=/$1 [L,QSA]

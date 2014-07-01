@@ -1,5 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteBase /pencilmein/v1/businesses/test/
-RewriteRule /(.*)/$ /pencilmein/v1/businesses/test/index.php?q1=$1
-RewriteRule /(.*)$ /pencilmein/v1/businesses/test/index.php?q1=$1
