@@ -7,13 +7,13 @@
  * @since      File available since Release 1.0
  */
 
-require_once("class-business.php");
+require_once("json-business.php");
  
 class Business
 {
     public $id;
     public $name;
     public $address;
-    
+    public $phone;
 }
 ?>

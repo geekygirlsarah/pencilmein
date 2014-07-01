@@ -8,11 +8,12 @@
  */
 
 
-require_once("PMIv1.php");
+require_once("PMI.php");
+require_once("PMIv1Businesses.php");
 
 // Load Epiphany Framework
 
-include_once 'epiphany/Epi.php';
+include_once('epiphany/Epi.php');
 // Turn on errors
 Epi::setSetting('exceptions','true');
 

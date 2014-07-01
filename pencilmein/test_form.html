@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>A title!</title>
+</head>
+<body>
+
+<h2>PencilMeIn API Tester</h2>
+
+<div><strong>Get list of info of businesses (GET)</strong></div>
+<div><em>URL: /pencilmein/v1/businesses/</em></div>
+<form action="/pencilmein/v1/businesses/" method="get" target="result">
+<input type="submit" />
+</form>
+
+<br /><hr width="80%" /><br />
+
+<div><strong>Get specific business info (id=1)(GET)</strong></div>
+<div><em>URL: /pencilmein/v1/businesses/1/</em></div>
+<form action="/pencilmein/v1/businesses/1/" method="get" target="result">
+<input type="submit" />
+</form>
+
+<br /><hr width="80%" /><br />
+
+<div><strong>Get available appointments from business (id=1, date=today) (GET)</strong></div>
+<div><em>URL: /pencilmein/v1/businesses/1/appointments/</em></div>
+<form action="/pencilmein/v1/businesses/1/appointments/" method="get" target="result">
+<input type="submit" />
+</form>
+
+<br /><hr width="80%" /><br />
+
+<div><strong>Get available appointments from business (id=1, custom date) (GET)</strong></div>
+<div><em>URL: /pencilmein/v1/businesses/1/appointments/</em></div>
+<form action="/pencilmein/v1/businesses/1/appointments/" method="get" target="result">
+<br />
+Type the date here:<br />
+<input type="text" name="date" size="30" value="2013-11-01"/>
+<input type="submit" />
+</form>
+
+<br /><hr width="80%" /><br />
+
+<div><strong>Create a new appointment (id=1) (POST)</strong></div>
+<div><em>URL: /pencilmein/v1/businesses/1/appointments/</em></div>
+<form action="/pencilmein/v1/businesses/1/appointments/" method="post" target="result">
+<br />
+Paste JSON here:<br />
+<textarea rows="6" cols="30" name="request">{"appointment":{
+   "userid":123,
+   "time":123,
+   "duration":30
+   }
+}</textarea>
+<input type="submit" />
+</form>
+
+
+
+
+</body>
+</html>
